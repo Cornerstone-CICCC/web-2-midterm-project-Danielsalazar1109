@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ MOVIES</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="FunMovies Logo">
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchBar" class="search-bar" placeholder="Type to get your ticket">
+        </div>
+        <div class="toggle-container">
+            <div class="toggle-button">
+                <img id="modeIcon" src="images/shield.png" alt="Mode Day/Night">
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="navbar-container">
+            <a href="index.html">
+                <img src="images/home.png" alt="Home Icon" class="nav-icon" id="home"></a>
+            <a href="">
+                <img src="images/about.png" alt="About Icon" class="nav-icon" id="about"> </a>  
+        </div>
+        <div class="spiderman-container">
+            <div id="web">
+                <h1></h1>
+            </div>
+            <img src="images/spiderman.png" alt="Spider-Man" id="spiderman">
+        </div>
+<section id="trending-results">
+    <h2>Trending movies</h2>
+    <div class="movies-container"></div>
+    <div class="pacman-container">
+        <img src="images/pacman.gif" alt="Pac-Man" class="pacman"/>
+    </div>
+    <h2>Trending series</h2>
+    <div class="tv-container"></div>
+    <div class="pacman-container">
+        <img src="images/pacman.gif" alt="Pac-Man" class="pacman"/>
+    </div>
+</section>
+
+            <section id="search-results" style="display: none;">
+                <h2>Resultados de Búsqueda</h2>
+                <div class="movies-container"></div>
+                <div class="pacman-container">
+                    <img src="images/pacman.gif" alt="Pac-Man" class="pacman"/>
+                </div>
+            </section>
+            <section id="about-container">
+                <h1>About Us</h1>
+                <p>Welcome to DJ MOVIES, your go-to place for all things movies and TV series. Our platform offers the latest trends, reviews, and ticket information for all your favorite shows and movies.</p>
+                <h2>Our Mission</h2>
+                <p>At DJ MOVIES, our mission is to provide movie and TV show enthusiasts with an engaging and easy-to-use platform where they can discover new content, stay up-to-date with trends, and enjoy a seamless viewing experience.</p>
+                <h2>Contact Us</h2>
+                <p>If you have any questions or feedback, feel free to contact us. We would love to hear from you!</p>
+            </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

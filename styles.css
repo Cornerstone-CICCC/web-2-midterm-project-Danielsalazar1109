@@ -1,0 +1,607 @@
+body {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+  background-image: url("images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 0 1rem;
+}
+
+header .logo {
+  flex: 0 0 auto;
+}
+
+header .logo img {
+  height: 40vh;
+  width: 30vw;
+}
+
+header .search-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+header #searchBar {
+  padding: 0.5rem;
+  margin: 0 1rem;
+}
+
+header .search-bar::placeholder {
+  color: #fff;
+  font-size: 26px !important;
+  font-family: "Pixelify Sans", sans-serif;
+  text-align: center;
+}
+
+header .toggle-container {
+  flex: 0 0 auto;
+}
+
+header .toggle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 300px;
+  height: 70px;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+header .navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.night-mode #home {
+  content: url("images/homedark.png");
+}
+
+.night-mode #about {
+  content: url("images/aboutdark.png");
+}
+
+#about-container {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#about-container {
+  display: none;
+  transition: max-height 0.5s ease-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-icon {
+  width: 300px;
+  height: 300px;
+  margin-right: 8px;
+}
+
+header .toggle-button img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transition: transform 0.3s;
+}
+
+header .search-bar {
+  height: 400px;
+  width: 600px;
+  background: url("images/ticket.png") no-repeat center center;
+  background-size: cover;
+  border: none;
+  outline: none;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 32px !important;
+  font-family: "Pixelify Sans", sans-serif;
+  color: #fee506;
+}
+
+header .search-bar::placeholder {
+  color: #fff;
+}
+
+header #searchBar:focus::placeholder {
+  color: transparent;
+}
+
+header #searchBar:focus {
+  outline: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.spiderman-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#spiderman {
+  position: absolute;
+  bottom: 100px;
+  left: 95%;
+  transform: translateX(-50%);
+  width: 100px;
+  z-index: 20;
+}
+
+#web {
+  position: fixed;
+  bottom: 150px;
+  left: 95%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: auto;
+  background: url("images/web.png") no-repeat center center;
+  background-size: cover;
+  z-index: 20;
+}
+
+.night-mode #spiderman {
+  content: url("images/spidermandark.png");
+}
+
+.night-mode #web {
+  background: url("images/webdark.png") no-repeat center center;
+  background-size: cover;
+}
+
+.pacman-container {
+  text-align: left;
+  margin-bottom: 50px;
+  margin-left: 180px;
+}
+
+.pacman {
+  width: 100px;
+  height: 100px;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+.movies-container, .tv-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin-left: 100px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.day-mode {
+  background-image: url("images/lionking.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #000000;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.night-mode {
+  background-image: url("images/interstellar.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.day-mode .toggle-button img {
+  transform: translateX(-100px);
+}
+
+.night-mode .toggle-button img {
+  transform: translateX(100px);
+}
+
+.slick-carousel {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.slick-slide {
+  padding: 10px;
+  max-width: 25%;
+}
+
+.slick-slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.night-mode .pacman-container img {
+  content: url("images/zombie.gif");
+  width: 200px;
+  height: 200px;
+}
+
+.night-mode .slick-dots li button:before {
+  color: #00FF00 !important;
+}
+
+.night-mode .slick-dots li.slick-active button:before {
+  color: #00CC00 !important;
+}
+
+.slick-dots li button:before {
+  font-size: 20px !important;
+  color: #fff700 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffcc01 !important;
+}
+
+.slick-prev, .slick-next {
+  font-size: 24px !important;
+  position: absolute;
+  top: 40% !important;
+  transform: translateY(-50%);
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  width: 50px !important;
+  height: 50px !important;
+  border: none !important;
+  z-index: 10;
+}
+
+.slick-prev {
+  left: -20px !important;
+}
+
+.slick-next {
+  right: -20px !important;
+}
+
+.slick-prev, .slick-next {
+  background-image: url("images/wilson.png") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  width: 100px !important;
+  height: 100px !important;
+  border: none !important;
+}
+
+.slick-prev::before, .slick-next::before {
+  display: none !important;
+}
+
+.night-mode .slick-prev, .night-mode .slick-next {
+  background-image: url("images/jason.png") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  width: 150px !important;
+  height: 150px !important;
+  border: none !important;
+}
+
+.night-mode .slick-prev {
+  left: -130px !important;
+}
+
+.night-mode .slick-next {
+  right: -130px !important;
+}
+
+.slick-carousel .slick-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-image: url(images/description.jpg);
+  background-size: cover;
+  padding: 20px;
+  padding-right: 150px;
+  border-radius: 8px;
+  width: 60%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  z-index: 1001;
+}
+
+.night-mode .modal-content {
+  background-image: url(images/descriptiondark.jpg);
+  background-size: cover;
+  padding-right: 500px;
+  color: #ffffff;
+}
+
+.slick-dots li {
+  display: none !important;
+}
+
+@media (min-width: 769px) {
+  .slick-dots li:nth-child(-n+20) {
+    display: inline-block !important;
+  }
+}
+@media (max-width: 1024px) {
+  .slick-dots li:nth-child(-n+4) {
+    display: inline-block !important;
+  }
+}
+@media (max-width: 768px) {
+  .slick-dots li:nth-child(-n+4) {
+    display: inline-block !important;
+  }
+}
+@media (max-width: 480px) {
+  .slick-dots li:nth-child(-n+3) {
+    display: inline-block !important;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  header .logo, header .toggle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  header .logo img {
+    width: 30vw;
+    height: auto;
+  }
+  header .toggle-button {
+    width: 250px;
+    height: 45px;
+  }
+  header .search-bar {
+    width: 70vw;
+    height: 25vh;
+    margin-top: 20px;
+    background-size: cover;
+  }
+  header .search-bar::placeholder {
+    color: #fff;
+    font-size: 16px !important;
+  }
+  .movies-container, .tv-container {
+    flex-direction: column;
+  }
+  .pacman-container {
+    margin-left: 0;
+  }
+  .slick-prev, .slick-next {
+    width: 45px !important;
+    height: 45px !important;
+    top: 25% !important;
+  }
+  .slick-prev {
+    left: -10px !important;
+  }
+  .slick-next {
+    right: -50px !important;
+  }
+  .night-mode .slick-prev {
+    left: -60px !important;
+  }
+  .night-mode .slick-next {
+    right: -60px !important;
+  }
+  #spiderman {
+    bottom: 80px;
+  }
+  #web {
+    bottom: 80px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  header .logo, header .toggle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  header .logo img {
+    width: 40vw;
+    height: auto;
+  }
+  header .toggle-button {
+    width: 300px;
+    height: 50px;
+  }
+  header .search-bar {
+    width: 80vw;
+    height: 30vh;
+    margin-top: 20px;
+    background-size: cover;
+  }
+  header .search-bar::placeholder {
+    color: #fff;
+    font-size: 18px !important;
+    margin-bottom: 20px;
+  }
+  .movies-container, .tv-container {
+    flex-direction: column;
+  }
+  .pacman-container {
+    margin-left: 0;
+  }
+  .slick-prev, .slick-next {
+    width: 40px !important;
+    height: 40px !important;
+    top: 20% !important;
+    padding: 0 !important;
+  }
+  .movies-container, .tv-container {
+    margin-left: 40px !important;
+    margin-right: 40px !important;
+  }
+  .slick-prev {
+    left: 10px !important;
+  }
+  .slick-next {
+    right: 0px !important;
+  }
+  .night-mode .slick-prev {
+    left: -120px !important;
+  }
+  .night-mode .slick-next {
+    right: -130px !important;
+  }
+  #spiderman {
+    bottom: 50px;
+  }
+  #web {
+    bottom: 85px;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  header .logo, header .toggle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  header .logo img {
+    width: 50vw;
+    height: auto;
+  }
+  header .toggle-button {
+    width: 200px;
+    height: 40px;
+  }
+  header .search-bar {
+    width: 90vw;
+    height: 20vh;
+    margin-top: 15px;
+    background-size: cover;
+  }
+  header .search-bar::placeholder {
+    color: #fff;
+    font-size: 14px !important;
+  }
+  .movies-container, .tv-container {
+    flex-direction: column;
+  }
+  .pacman-container {
+    margin-left: 0;
+  }
+  .slick-prev, .slick-next {
+    width: 40px !important;
+    height: 40px !important;
+    top: 20% !important;
+  }
+  .slick-prev {
+    left: -10px !important;
+  }
+  .slick-next {
+    right: -40px !important;
+  }
+  .night-mode .slick-prev {
+    left: -50px !important;
+  }
+  .night-mode .slick-next {
+    right: -50px !important;
+  }
+  #spiderman {
+    bottom: 60px;
+  }
+  #web {
+    bottom: 60px;
+  }
+}
+.slick-prev {
+  left: -100px !important;
+}
+
+.slick-next {
+  right: -100px !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
