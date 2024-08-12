@@ -127,7 +127,7 @@ $(document).ready(function() {
             body.style.backgroundImage = 'url(images/interstellar.gif)';
             document.getElementById('about-container').style.backgroundColor = 'black';
         } else {
-            body.style.backgroundImage = 'url(images/lionking.gif)';
+            body.style.backgroundImage = 'url(images/background.jpg)';
             document.getElementById('about-container').style.backgroundColor = 'white';
         }
     };
@@ -221,7 +221,7 @@ $(document).ready(function() {
                 body.style.backgroundImage = 'url(images/interstellar.gif)';
                 aboutContainer.css('backgroundColor', 'black');
             } else {
-                body.style.backgroundImage = 'url(images/lionking.gif)';
+                body.style.backgroundImage = 'url(images/background.jpg)';
                 aboutContainer.css('backgroundColor', 'white');
             }
         };
